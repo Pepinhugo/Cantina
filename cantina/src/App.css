@@ -1,0 +1,182 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+
+  background-image: url("./fondApp.jpeg");
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/*CSS de la Navbar (barre de menu) de l'application*/
+.navigation{
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+  box-shadow: 10px 5px 5px black;
+  opacity: 0.93;
+  width: 100%;
+  height:55px;
+  margin-bottom: 15px;
+}
+
+.navigation a{
+  text-decoration: none;
+  margin-right: 50px;
+  color: lightgray;
+}
+
+.navigation a:hover{
+  color:darkgray;
+  
+}
+
+ul{
+  margin-top: 10;
+  padding: 0;
+}
+
+/*CSS des éléments list dans la Card*/
+.Card li{
+  border: 3px solid black;
+  background-color: rgba(40,44,52,0.92);
+  margin-top: 1em;
+  list-style: none;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 20px;
+}
+
+
+.formsAddRecipe, .formsModifRecipe{
+  border: 3px solid black;
+  background-color: #282c34;
+  opacity: 0.93;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 20px;
+}
+
+.formsAddRecipe li, .formsModifRecipe li{
+  list-style: none;
+}
+
+
+li a{
+  text-decoration: none;
+  color: lightgray;
+}
+
+li a:hover{
+  color:darkgray;
+  
+}
+
+/*Boutons de la Card*/
+button {
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+}
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/*Div qui englobe les Cards*/
+.bigCard{
+  display: inline-block; 
+  width:50%;
+  background-color: #282c34;
+  opacity: 0.93;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 20px;
+}
+
+/*----------------------------------------*/
+
+/*CSS de la scrollbar de l'application*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#282c34, darkgray, #282c34);
+  box-shadow: 5px 10px 10px 5px black;
+  border-radius: 10px;
+}
+/*----------------------------------------*/
+
+
+input, select, button{
+  border: 2px solid black;
+}
+
+/*Bouton haut de page*/
+#magicbtn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #282c34;
+  box-shadow: 10px 5px 5px black;
+  color: white;
+  font-size: bold;
+  
+}
+/*----------------------------------------*/
+
+p{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img{
+  width:80%;
+}
+
+/*Responsive*/
+
+@media all and (min-width: 800px) {
+  
+ img{
+   width:80%;
+   
+ } 
+}
+
+@media all and (max-width: 799px) {
+
+  .App-header {
+    background-size:100%;
+  }    
+
+  .Card li{
+    
+    background-color: rgba(40,44,52,0.92);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .bigCard p{
+    width: 80%;
+  }
+
+
+}
+  
